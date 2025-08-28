@@ -54,20 +54,49 @@
 
 #1010101010101010101010101010101010101010101010
 
-nota1_aluno1 = float(input("Digite a nota 1 do aluno 1: "))
-nota2_aluno1 = float(input("Digite a nota 2 do aluno 1: "))
-nota3_aluno1 = float(input("Digite a nota 3 do aluno 1: "))
+
 
 #nota1_aluno2 = float(input("Digite a nota 1 do aluno 2: "))
 #nota2_aluno2 = float(input("Digite a nota 2 do aluno 2: "))
 #nota3_aluno2 = float(input("Digite a nota 3 do aluno 2: "))
 
-notas_aluno1 = [nota1_aluno1, nota2_aluno1, nota3_aluno1]
-print(notas_aluno1)
+# notas_aluno1 = [nota1_aluno1, nota2_aluno1, nota3_aluno1]
+# print(notas_aluno1)
 #notas_aluno2 = [nota1_aluno2, nota2_aluno2, nota3_aluno2]
 
 #notas = [notas_aluno1, notas_aluno2]
 #git print(notas)
 
-media_aluno1 = (nota1_aluno1 + nota2_aluno1 + nota3_aluno1) / 3
+#media_aluno1 = (nota1_aluno1 + nota2_aluno1 + nota3_aluno1) / 3
 #print("A media do aluno 1 é" (media_aluno1))
+
+
+#11#11#11#11#11#11#11#11#11#11#11#11#11#11#11#11#11#11#11
+
+# tabuleiro_vazio = [[None for coluna in range(8)] for linha in range(8)]
+# for linha in tabuleiro_vazio:
+#       print(linha)
+
+# tabuleiro_vazio[0][0] = "tor"
+# tabuleiro_vazio[0][-1] = "tor"
+# tabuleiro_vazio[0][1] = "cav"
+# tabuleiro_vazio[0][-2] = "cav"
+# tabuleiro_vazio[0][2] = "bis"
+# tabuleiro_vazio[0][-3] = "bis"
+# tabuleiro_vazio[0][3] = "rei"
+# tabuleiro_vazio[0][4] = "rai"
+# tabuleiro_vazio[1] = ["pea"] * 8
+
+# tabuleiro_vazio[-1][0] = "TOR"
+# tabuleiro_vazio[-1][-1] = "TOR"
+# tabuleiro_vazio[-1][1] = "CAV"
+# tabuleiro_vazio[-1][-2] = "CAV"
+# tabuleiro_vazio[-1][2] = "BIS"
+# tabuleiro_vazio[-1][-3] = "BIS"
+# tabuleiro_vazio[-1][3] = "REI"
+# tabuleiro_vazio[-1][4] = "RAI"
+# tabuleiro_vazio[-2] = ["PEA"] * 8
+
+
+# for linha in tabuleiro_vazio:
+#     print(linha)

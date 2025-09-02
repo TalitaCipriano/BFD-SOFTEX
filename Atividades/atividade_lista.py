@@ -73,9 +73,9 @@
 
 #11#11#11#11#11#11#11#11#11#11#11#11#11#11#11#11#11#11#11
 
-# tabuleiro_vazio = [[None for coluna in range(8)] for linha in range(8)]
+#tabuleiro_vazio = [["[ ]" for coluna in range(8)] for linha in range(8)]
 # for linha in tabuleiro_vazio:
-#       print(linha)
+#         print(linha)
 
 # tabuleiro_vazio[0][0] = "tor"
 # tabuleiro_vazio[0][-1] = "tor"
@@ -97,6 +97,18 @@
 # tabuleiro_vazio[-1][4] = "RAI"
 # tabuleiro_vazio[-2] = ["PEA"] * 8
 
+# for linha in tabuleiro_vazio:
+#     print(linha)
 
+# tabuleiro_vazio = [["[ ]" for coluna in range(8)] for linha in range(8)]
+# linha_peoes = ["pea"] * 8
+# lista_pecas = ["tor", "cav", "bis", "rai", "rei", "bis", "cav", "tor"]
+# tabuleiro_vazio[0] = lista_pecas.copy()
+# tabuleiro_vazio[1] = linha_peoes.copy()
+# tabuleiro_vazio[-1] = lista_pecas.copy()
+# tabuleiro_vazio[-2] = linha_peoes.copy()
+
+# tabuleiro_vazio[5][5] = tabuleiro_vazio[6][5]
+# tabuleiro_vazio[6][5] = "[ ]"
 # for linha in tabuleiro_vazio:
 #     print(linha)

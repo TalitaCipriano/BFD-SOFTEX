@@ -109,3 +109,18 @@ def menu():
 
 if __name__ == "__main__":
     menu()
+
+#FUNÇÃO EDITAR
+
+def editar_curso(cursos, id_curso, novo_nome=None, nova_descricao=None, nova_carga=None):
+    for curso in cursos:
+        if curso["id"] == id_curso:
+            if novo_nome is not None:
+                curso["nome"] = novo_nome
+            if nova_descricao is not None:
+                curso["descrição"] = nova_descricao
+            if nova_carga is not None:
+                curso["carga"] = nova_carga
+            print(f"Curso com ID {id_curso} editado com sucesso!")
+            return
+    print(f"Curso com ID {id_curso} não encontrado.")

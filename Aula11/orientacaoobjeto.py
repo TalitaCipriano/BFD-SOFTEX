@@ -13,8 +13,8 @@ class Cachorro:
 
     print(auau.especie, auau.nome, auau.raca, auau.idade, sep="\n")
 
-    class Cachorro:
+class Cachorro:
     dono = "Fred" #atributo que é compartilhdo por todos os objetos
-        self.nome = nome # self - exclusivo para esse objeto
-        self.raca = raca
-        self.idade = idade
+    self.nome = nome # self - exclusivo para esse objeto
+    self.raca = raca
+    self.idade = idade

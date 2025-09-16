@@ -89,86 +89,86 @@
 # conta.mostrar_saldo()
 
 #66666666666666666666666666666666666666666666666666666666666666666666
-class ContaBancaria:
-   def __init__(self, titular, saldo=0):
-      self.titular = titular
-      self.saldo = saldo
+# class ContaBancaria:
+#    def __init__(self, titular, saldo=0):
+#       self.titular = titular
+#       self.saldo = saldo
     
-   def saque(self, valor):
-      if valor > self.saldo:
-         print("Saldo Insuficiente")
-         return False
-      else:
-         self.saldo -= valor
-         print(f"Saque de R${valor} realizado com sucesso. Saldop atual: R${self.saldo}.")   
-         return True
+#    def saque(self, valor):
+#       if valor > self.saldo:
+#          print("Saldo Insuficiente")
+#          return False
+#       else:
+#          self.saldo -= valor
+#          print(f"Saque de R${valor} realizado com sucesso. Saldop atual: R${self.saldo}.")   
+#          return True
       
-   def deposito(self, valor):
-      if valor > 0:
-         self.saldo += valor
-         print(f"Depósito de R${valor} realizado com sucesso. Saldo atual: R${self.saldo}.")
-      else:
-         print("O valor do depósito deve ser positivo.")
+#    def deposito(self, valor):
+#       if valor > 0:
+#          self.saldo += valor
+#          print(f"Depósito de R${valor} realizado com sucesso. Saldo atual: R${self.saldo}.")
+#       else:
+#          print("O valor do depósito deve ser positivo.")
 
-   def mostrar_saldo(self):
-        print(f"Saldo atual de {self.titular}: R${self.saldo}.")
+#    def mostrar_saldo(self):
+#         print(f"Saldo atual de {self.titular}: R${self.saldo}.")
 
-conta = ContaBancaria("Talita", 200)
-conta.saque(100)
-conta.saque(300)
-conta.mostrar_saldo()
+# conta = ContaBancaria("Talita", 200)
+# conta.saque(100)
+# conta.saque(300)
+# conta.mostrar_saldo()
 
 #7777777777777777777777777777777777777 e 888888888888888888888888888888888888888888
-class Aluno:
-    def __init__(self, nome, nota):
-        self.nome = nome
-        self.nota = nota
+# class Aluno:
+#     def __init__(self, nome, nota):
+#         self.nome = nome
+#         self.nota = nota
 
-    def __str__(self):
-        return f'Aluno: {self.nome} - Nota: {self.nota}'
+#     def __str__(self):
+#         return f'Aluno: {self.nome} - Nota: {self.nota}'
     
-class Turma:
-    def __init__(self):
-        self.alunos = []
+# class Turma:
+#     def __init__(self):
+#         self.alunos = []
 
-    def adicionar_aluno(self, aluno):
-        self.alunos.append(aluno)
+#     def adicionar_aluno(self, aluno):
+#         self.alunos.append(aluno)
 
-    def listar_alunos(self):
-        for aluno in self.alunos:
-            print(aluno)
+#     def listar_alunos(self):
+#         for aluno in self.alunos:
+#             print(aluno)
 
-aluno1 = Aluno("Laís", 9)
-aluno2 = Aluno("Thiago", 9)
-aluno3 = Aluno("Guilherme", 9)
+# aluno1 = Aluno("Laís", 9)
+# aluno2 = Aluno("Thiago", 9)
+# aluno3 = Aluno("Guilherme", 9)
 
-print(aluno1)  
-print(aluno2)  
-print(aluno3)  
+# print(aluno1)  
+# print(aluno2)  
+# print(aluno3)  
 
-turma = Turma()
-turma.adicionar_aluno(aluno1)
-turma.adicionar_aluno(aluno2)
-turma.adicionar_aluno(aluno3)
+# turma = Turma()
+# turma.adicionar_aluno(aluno1)
+# turma.adicionar_aluno(aluno2)
+# turma.adicionar_aluno(aluno3)
 
-print("\nAlunos da turma:")
-turma.listar_alunos()
+# print("\nAlunos da turma:")
+# turma.listar_alunos()
 
 #9999999999999999999999999999999999999999999999999999999
 
-class Cachorro:
-   especie = "Canis familiaris"
+# class Cachorro:
+#    especie = "Canis familiaris"
 
-   def __init__(self, nome, idade):
-       self.nome = nome
-       self.idade = idade
+#    def __init__(self, nome, idade):
+#        self.nome = nome
+#        self.idade = idade
 
-   def __str__(self):
-        return f"Cachorro: {self.nome}, Idade: {self.idade}, Espécie: {self.especie}"
+#    def __str__(self):
+#         return f"Cachorro: {self.nome}, Idade: {self.idade}, Espécie: {self.especie}"
 
-cachorro1 = Cachorro("Bob", 13)
-cachorro2 = Cachorro("Stark", 5)
+# cachorro1 = Cachorro("Bob", 13)
+# cachorro2 = Cachorro("Stark", 5)
 
-print(Cachorro.especie)
-print(cachorro1.especie)
+# print(Cachorro.especie)
+# print(cachorro1.especie)
 

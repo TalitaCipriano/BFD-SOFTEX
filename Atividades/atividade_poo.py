@@ -118,18 +118,57 @@ conta.saque(100)
 conta.saque(300)
 conta.mostrar_saldo()
 
-#777777777777777777777777777777777777777777777777777777777777777777777
+#7777777777777777777777777777777777777 e 888888888888888888888888888888888888888888
 class Aluno:
-   def __init__(self,nome, nota):
-      self.nome = nome
-      self.nota = nota
+    def __init__(self, nome, nota):
+        self.nome = nome
+        self.nota = nota
 
+    def __str__(self):
+        return f'Aluno: {self.nome} - Nota: {self.nota}'
+    
 class Turma:
-   def __init__(self, alunos):
-      self.alunos = alunos
-      
-      alunos=["aluno1", "aluno2", "aluno3"]
+    def __init__(self):
+        self.alunos = []
 
-   def adicionar_aluno(self, nome):
-      self.nome = nome
-      
+    def adicionar_aluno(self, aluno):
+        self.alunos.append(aluno)
+
+    def listar_alunos(self):
+        for aluno in self.alunos:
+            print(aluno)
+
+aluno1 = Aluno("Laís", 9)
+aluno2 = Aluno("Thiago", 9)
+aluno3 = Aluno("Guilherme", 9)
+
+print(aluno1)  
+print(aluno2)  
+print(aluno3)  
+
+turma = Turma()
+turma.adicionar_aluno(aluno1)
+turma.adicionar_aluno(aluno2)
+turma.adicionar_aluno(aluno3)
+
+print("\nAlunos da turma:")
+turma.listar_alunos()
+
+#9999999999999999999999999999999999999999999999999999999
+
+class Cachorro:
+   especie = "Canis familiaris"
+
+   def __init__(self, nome, idade):
+       self.nome = nome
+       self.idade = idade
+
+   def __str__(self):
+        return f"Cachorro: {self.nome}, Idade: {self.idade}, Espécie: {self.especie}"
+
+cachorro1 = Cachorro("Bob", 13)
+cachorro2 = Cachorro("Stark", 5)
+
+print(Cachorro.especie)
+print(cachorro1.especie)
+

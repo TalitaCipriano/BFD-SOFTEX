@@ -1,18 +1,29 @@
 #11111111111111111111111111111111111111111111111111111111111111111
+Na classe, ContaBancaria, converta saldo para uma atributo privado. 
+Crie um método setter e um getter para acessar e modificar essa atributo, seguindo uma regra lógica (Ex: saldo não pode ser negativo)
 
-# class Usuario:
-#     def __init__(self, nome, email):
-#         self.nome = nome
-#         self.email = email
+class ContaBancaria:
+    def __init__(self, nome, agencia, conta, saldo)
+        self.nome = nome
+        self.agencia = agencia
+        self.conta = conta
+        self.__saldo = saldo_inicial 
+            if saldo_inicial >= 0 
+            else 0
 
-# class Cliente(Usuario):
-#     def __init__(self, nome, email, tipo_cliente):  
-#         super().__init__(nome, email)  
-#         self.tipo_cliente = tipo_cliente
+    def get__saldo(self):
+        return self.__saldo
 
-# cliente1 = Cliente("Talita", "talita@talita.com", "ouro")
+    def set_saldo(self, saldo):
+        if valor < 0:
+            print("Erro: saldo não pode ser negativo.")
+        else:
+            self.__saldo = valor
 
-# print(f"Nome: {cliente1.nome}, E-mail: {cliente1.email}, Cliente: {cliente1.tipo_cliente}")
+conta.set_saldo(500)
+print(conta.get_saldo())
+
+     
 
 #2222222222222222222222222222222222222222222222222222222222222222222222
 

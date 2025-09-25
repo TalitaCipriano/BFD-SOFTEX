@@ -61,21 +61,37 @@ print(gerente1.exibir_informacoes())
 print(f"Nome: {gerente1.nome}")
 print(f"Departamento: {gerente1.departamento}")
 
-#666666666666666666666666666666666666666666666666666666666666666666
-# Crie uma classe Autenticacao com um método login(). 
-# Crie outra classe Permissao com um método verificar_permissao(). 
-# Em seguida, crie uma classe Administrador que herda de ambas. Como usar os métodos herdados?
+#666666666666666666666  e  777777777777777777777777777
 
 class Autenticacao:
-    def login(self, usuario, senha)
-    self.usuario = usuario
-    self.senha = senha
+    def login(self, usuario, senha):
+        if usuario == "admin" and senha == "1234":
+            print("Login bem-sucedido!")
+            return True
+        else:
+            print("Falha no login!")
+            return False
+
+    def status(self):
+        print("Status de Autenticacao")
 
 class Permissao:
-    def __init__(self, verificar_permissao):
-    self.verificar_permissao = verificar_permissao
+    def verificar_permissao(self, usuario):
+        if usuario == "admin":
+            print("Permissão concedida.")
+            return True
+        else:
+            print("Permissão negada.")
+            return False
 
-class Administrador:
-    def __init__(self,):
-    super().__init__(login, verifcar_permissao)
-        
+    def status(self):
+        print("Status de Permissao")
+
+class Administrador(Autenticacao, Permissao):
+    pass
+
+admin = Administrador()
+admin.status()  # Vai chamar qual?
+
+print(Administrador.__mro__)
+
